@@ -1,0 +1,61 @@
+<template class="task-template">
+    <section id="about-section" class="section js-section u-category-about">
+        <div class="section-wrapper">
+            <header class="section-header">
+                <hgroup>
+                    <h2>TIME <b>KEEPER</b> <> with <span class="heart-sign">❤</span> by Jibran Shaikh</h2>
+                </hgroup>
+            </header>
+            <div class="section-body section-article tabs">
+                    <input id="intro-input" type="radio" name="tab" class="tab" checked="1" >
+                    <label for="intro-input">Intro</label>
+                    <input id="license-input" type="radio" name="tab" class="tab">
+                    <label for="license-input">License</label>
+                    <input id="credits-input" type="radio" name="tab" class="tab">
+                    <label for="credits-input">Credits</label>
+                    <input id="fordevs-input" type="radio" name="tab" class="tab">
+                    <label for="fordevs-input">For Devs</label>
+                <section id="intro-section" class="section-in-tabs">
+                    <p>Time Keeper is a simple time management journal. It helps you to <b>pre-plan</b> your daily activities and keep <b>track</b> of your <b>time</b>.</p>
+                    <p>It will help you to determine:</p>
+                    <ul>
+                        <li>Is this the best use of my time?</li>
+                        <li>Am I doing the right task at the right time?</li>
+                        <li>Are there any tasks that could be eliminated or put off?</li>
+                        <li>If you could cut down on the amount of time you're spending on certain tasks?</li>
+                    </ul>
+                    <p><b>In short, it will help you to increase your productivity.</b></p>
+                    <p>Read <button id="howto-section-shortcut">'How To Use This App?'</button> section to get started.</p>
+                </section>
+                <section id="license-section" class="section-in-tabs">
+                    <p>Time Keeper is free software; you can redistribute it and/or modify it under the terms of the GNU General Public Licence as published by the Free Software Foundation, either version 3 of the Licence, or (at your option) any later version.</p>
+
+<p>Time Keeper is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public Licence for more details.</p>
+
+<p>You should have received a copy of the GNU General Public Licence along with Time Keeper.  If not, see <a class="ex-link" href="http://www.gnu.org/licenses/">&#060;http://www.gnu.org/licenses/&#062;</a>.</p>
+                    <p><em><b>Note:</b> If you wish to modify or distribute this application or any component which is used to make this application, please read appropriate license. You should have received relevent licenses in the source code or installation directory. In the case that you didn't, please visit the official page by following links which are provided on Credits tab.</em></p>
+                </section>
+                <section id="credits-section" class="section-in-tabs">
+                    <p>This application is made by using the following technologies:</p>
+                    <ul>
+                        <li><a href="http://electron.atom.io" class="ex-link">Electron</a></li>
+                        <li><a href="http://nodejs.org" class="ex-link">Nodejs</a></li>
+                        <li><a href="http://font.ubuntu.com/" class="ex-link">Ubuntu fonts</a></li>
+                        <li><a href="http://numixproject.org/" class="ex-link">Numix Circle Icon Theme</a></li>
+                    </ul>
+                    <p><strong>Thanks to everybody involved in developement of above mentioned technologies directly or indirectly.</strong></p>
+                    <p>Special thanks to Jeremiah Junken for invaluable suggestions.</p>
+                </section>
+                <section id="fordevs-section" class="section-in-tabs">
+                    <p>Time Keeper is a desktop application made using <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>, <b>Nodejs</b>. It runs in <b>Electron</b>. Electron must be installed before you use this application.</p>
+                    <p>UI fonts used is Ubuntu and Ubuntu Light.</p>
+                    <p>Time Keeper is build only for <b>Linux</b> distributions. If you wish to port this application to other platform please refer to <a class="ex-link" href="http://electron.atom.io/docs/">Electron documentation</a>.</p>
+                    <p>User's data is saved in <code id="userData"></code></p>
+                    <p>The source code of this application is in <code id="appPath"></code></p>
+                    <p>You can get source code also from official page on <a href="" class="ex-link">Github</a></p>
+                </section>
+            </div>
+        </div>
+        <script src="renderer-process/about/fordevs.js" charset="utf-8"></script>
+    </section>
+</template>

@@ -1,0 +1,53 @@
+
+/* sections in tabs */
+.section-in-tabs {
+    display: none;
+    border-top: 1px solid var(--color-border);
+}
+
+/* tabs */
+.tabs input {
+    display: none;
+}
+.tabs label {
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0.5rem 3rem;
+    border-top: 2px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+    margin: 0 0 -1px;
+}
+.tabs label {
+    cursor: pointer;
+}
+.tabs input:checked + label {
+    border-top: 2px solid var(--color-accent);
+    border-bottom: 1px solid white;
+    border-right: 1px solid var(--color-border);
+    border-left: 1px solid var(--color-border);
+}
+#intro-input:checked ~ #intro-section,
+#license-input:checked ~ #license-section,
+#credits-input:checked ~ #credits-section,
+#fordevs-input:checked ~ #fordevs-section {
+    display: block;
+}
+
+
+
+/* shortcut button to how to section */
+#howto-section-shortcut{
+    display: inline;
+    background: inherit;
+    color: inherit;
+    outline: none;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+}
+#howto-section-shortcut:hover {
+    color: var(--color-accent);
+}

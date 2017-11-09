@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Time Keeper</title>
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/global.css"  />
+    <link rel="stylesheet" href="assets/css/nav.css" />
+    <link rel="stylesheet" href="assets/css/section.css" />
+    <link rel="stylesheet" href="assets/css/about.css" />
+    <link rel="stylesheet" href="assets/css/todays-journal.css" />
+
+    <link rel="import" href="sections/todays-journal.html"  />
+    <link rel="import" href="sections/old-journals.html"  />
+    <link rel="import" href="sections/how-to.html"  />
+    <link rel="import" href="sections/about.html" />
+    <link rel="import" href="sections/preferences.html" />
+    <link rel="import" href="sections/troubleshooting.html" />
+  </head>
+  <body>
+    <nav class="nav js-nav nav-is-hidden">
+        <header class="nav-header">
+            <h1 class="nav-title">Time <b>Keeper</b></h1>
+            <span class="nav-title-icon"></span>
+        </header>
+        <ul class="nav-ul">
+            <li data-section="todaysjournal" class="nav-li u-category-todaysjournal" id="todaysjournal"><b>Today's</b> Journals<span></span></li>
+            <li data-section="oldjournals" class="nav-li u-category-oldjournals" id="oldjournals">View <b>Old</b> Journals<span></span></li>
+            <li data-section="preferences" class="nav-li u-category-preferences" id="preferences"><b>Preferences</b></li>
+            <li data-section="about" class="nav-li u-category-about" id="about"><b>About</b> This App<span></span></li>
+            <li data-section="howto" class="nav-li u-category-howto" id="howto"><b>How To</b> Use This App?<span></span></li>
+            <li data-section="troubleshooting" class="nav-li u-category-troubleshooting" id="troubleshooting"><b>Troubleshooting</b></li>
+        </ul>
+    </nav>
+    <main class="content js-content is-shown"></main>
+  </body>
+
+    <script src="renderer-process/global.js" charset="utf-8"></script>
+    <script src="renderer-process/import.js" charset="utf-8"></script>
+    <script src="renderer-process/ex-link.js" charset="utf-8"></script>
+    <script src="renderer-process/nav.js" charset="utf-8"></script>
+    <script src="renderer-process/startupAnimation.js" charset="utf-8"></script>
+</html>

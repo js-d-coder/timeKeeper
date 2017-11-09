@@ -1,0 +1,15 @@
+{
+  "name": "Time Keeper",
+  "productName": "Time Keeper",
+  "version": "0.1.0",
+  "description": "A Simple Time Management Journal",
+  "main": "main.js",
+  "keywords": [
+    "timekeeping",
+    "preplanning",
+    "journal",
+    "time"
+  ],
+  "author": "Jibran Shaikh",
+  "license": "GPLv3"
+}

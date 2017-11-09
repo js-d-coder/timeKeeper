@@ -1,0 +1,73 @@
+/* Section --------------------- */
+
+.section {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    color: var(--color-accent);
+    font-size: 1.214285rem;
+    /** Hide **/
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: visibility 0s .12s linear , opacity .12s ease-in, transform .12s ease-in;
+}
+.section.is-shown {
+    pointer-events: auto;
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+    transition: visibility 0s 0s linear , opacity .36s ease-out, transform .36s ease-out;
+}
+
+a:hover {
+    color: var(--color-accent);
+}
+/* section wrapper */
+.section-wrapper {
+    max-width: 640px;
+    margin: 0 auto;
+}
+@media (min-width: 1200px){
+    .section-wrapper {
+        padding: 0;
+    }
+}
+@media (max-width:1199px){
+    .section-wrapper {
+        padding: 0 3rem;
+    }
+}
+
+/* section body */
+
+.section-body {
+    color: var(--color);
+}
+
+
+.section header {
+    text-align: center;
+    padding: 2rem 0 1rem;
+}
+
+.section header h2 {
+    font-size: 1.7rem;
+    margin: 1rem 0 2rem 0;
+    padding: 0;
+}
+
+.section ul {
+    display: inline-block;
+    margin: 0;
+    padding-left: 3.5rem;
+}
+
+.section ul li {
+    text-align: left;
+}

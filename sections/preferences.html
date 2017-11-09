@@ -1,0 +1,66 @@
+<template class="task-template">
+    <section id="preferences-section" class="section js-section u-category-preferences">
+        <div class="section-wrapper">
+            <div class="preferences-wrapper">
+                <p>Time range between which activities are to be recorded :</p>
+                <select name="startTime-hour" id="sTh" class="timeRange">
+                    <option value="01">1</option>
+                    <option value="02">2</option>
+                    <option value="03">3</option>
+                    <option value="04">4</option>
+                    <option value="05">5</option>
+                    <option value="06" selected="1">6</option>
+                    <option value="07">7</option>
+                    <option value="08">8</option>
+                    <option value="09">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <select name="startTime-minute" id="sTm" class="timeRange">
+                    <option value="00" selected="1">00</option>
+                    <option value="30">30</option>
+                </select>
+                <select name="startTime-ampm" id="sTap" class="timeRange">
+                    <option value="am" selected="1">AM</option>
+                    <option value="pm">PM</option>
+                </select>
+                 to
+                 <select name="endTime-hour" id="eTh" class="timeRange">
+                     <option value="01">1</option>
+                     <option value="02">2</option>
+                     <option value="03">3</option>
+                     <option value="04">4</option>
+                     <option value="05">5</option>
+                     <option value="06">6</option>
+                     <option value="07" selected="1">7</option>
+                     <option value="08">8</option>
+                     <option value="09">9</option>
+                     <option value="10">10</option>
+                     <option value="11">11</option>
+                     <option value="12">12</option>
+                 </select>
+                 <select name="endTime-minute" id="eTm" class="timeRange">
+                     <option value="00" selected="1">00</option>
+                     <option value="30">30</option>
+                 </select>
+                 <select name="endTime-ampm" id="eTap" class="timeRange">
+                     <option value="am">AM</option>
+                     <option value="pm" selected="1">PM</option>
+                </select>
+                <small style="display: block; margin: 0.5rem 0;"><b>NOTE:</b> changes will take effect after you restart the application. This setting will also affect today's journal and future journals (not previous journals).</small>
+            </div>
+            <div class="preferences-wrapper">
+                <p>Create summary of week every:
+                    <select name="weekend" id="weekend">
+                        <option value="5" selected="1">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                    days</p>
+            </div>
+            <div class="save-button-wrapper" style="justify-content: initial;"><button type="button" class="save-button" id="save-preferences-button">Save</button></div>
+        </div>
+        <script src="renderer-process/preferences/preferences.js" charset="utf-8"></script>
+    </section>
+</template>

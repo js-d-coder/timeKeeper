@@ -1,0 +1,235 @@
+<template class="task-template">
+    <section id="todaysjournal-section" class="section js-section u-category-todaysjournal">
+        <div class="todaysjournal-wrapper">
+            <div class="table-head">
+                <span>Day: <input class="input" id="day" type="text" name="day" maxlength="1" min="1" size="1"></span>
+                <span style="margin: 0 2rem;">Day of Week:
+                    <select id="weekday" name="weekday">
+                        <option value="0">Sunday</option>
+                        <option value="1" selected="1">Monday</option>
+                        <option value="2">Tuesday</option>
+                        <option value="3">Wednesday</option>
+                        <option value="4">Thurday</option>
+                        <option value="5">Friday</option>
+                        <option value="6">Saturday</option>
+                    </select>
+                </span>
+                <span>Date:
+                    <input id="date" type="date" name="date">
+                </span>
+            </div>
+            <div class="table">
+                <table id="activity-table">
+                    <thead>
+                        <tr>
+                            <th class="th">Activities you plan to do tomorrow</th>
+                            <th class="th">What actually happened</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr data-enabled="1" id="1">
+                            <td><span class="activityCell">01:00 AM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">01:00 AM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="1.5">
+                            <td><span class="activityCell">01:30 AM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">01:30 AM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="2">
+                            <td><span class="activityCell">02:00 AM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">02:00 AM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="2.5">
+                            <td><span class="activityCell">02:30 AM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">02:30 AM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="3">
+                            <td><span class="activityCell">03:00 AM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">03:00 AM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="3.5">
+                            <td><span class="activityCell">03:30 AM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">03:30 AM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="4">
+                            <td><span class="activityCell">04:00 AM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">04:00 AM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="4.5">
+                            <td><span class="activityCell">04:30 AM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">04:30 AM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="5">
+                            <td><span class="activityCell">05:00 AM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">05:00 AM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="5.5">
+                            <td><span class="activityCell">05:30 AM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">05:30 AM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="6">
+                            <td><span class="activityCell">06:00 AM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">06:00 AM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="6.5">
+                            <td><span class="activityCell">06:30 AM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">06:30 AM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="7">
+                            <td><span class="activityCell">07:00 AM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">07:00 AM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="7.5">
+                            <td><span class="activityCell">07:30 AM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">07:30 AM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="8">
+                            <td><span class="activityCell">08:00 AM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">08:00 AM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="8.5">
+                            <td><span class="activityCell">08:30 AM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">08:30 AM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="9">
+                            <td><span class="activityCell">09:00 AM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">09:00 AM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="9.5">
+                            <td><span class="activityCell">09:30 AM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">09:30 AM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="10">
+                            <td><span class="activityCell">10:00 AM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">10:00 AM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="10.5">
+                            <td><span class="activityCell">10:30 AM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">10:30 AM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="11">
+                            <td><span class="activityCell">11:00 AM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">11:00 AM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="11.5">
+                            <td><span class="activityCell">11:30 AM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">11:30 AM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="12">
+                            <td><span class="activityCell">12:00 PM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">12:00 PM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="12.5">
+                            <td><span class="activityCell">12:30 PM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">12:30 PM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="13">
+                            <td><span class="activityCell">01:00 PM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">01:00 PM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="13.5">
+                            <td><span class="activityCell">01:30 PM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">01:30 PM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="14">
+                            <td><span class="activityCell">02:00 PM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">02:00 PM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="14.5">
+                            <td><span class="activityCell">02:30 PM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">02:30 PM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="15">
+                            <td><span class="activityCell">03:00 PM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">03:00 PM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="15.5">
+                            <td><span class="activityCell">03:30 PM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">03:30 PM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="16">
+                            <td><span class="activityCell">04:00 PM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">04:00 PM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="16.5">
+                            <td><span class="activityCell">04:30 PM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">04:30 PM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="17">
+                            <td><span class="activityCell">05:00 PM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">05:00 PM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="17.5">
+                            <td><span class="activityCell">05:30 PM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">05:30 PM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="18">
+                            <td><span class="activityCell">06:00 PM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">06:00 PM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="18.5">
+                            <td><span class="activityCell">06:30 PM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">06:30 PM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="19">
+                            <td><span class="activityCell">07:00 PM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">07:00 PM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="19.5">
+                            <td><span class="activityCell">07:30 PM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">07:30 PM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="20">
+                            <td><span class="activityCell">08:00 PM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">08:00 PM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="20.5">
+                            <td><span class="activityCell">08:30 PM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">08:30 PM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="21">
+                            <td><span class="activityCell">09:00 PM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">09:00 PM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="21.5">
+                            <td><span class="activityCell">09:30 PM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">09:30 PM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="22">
+                            <td><span class="activityCell">10:00 PM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">10:00 PM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="22.5">
+                            <td><span class="activityCell">10:30 PM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">10:30 PM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="23">
+                            <td><span class="activityCell">11:00 PM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">11:00 PM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="23.5">
+                            <td><span class="activityCell">11:30 PM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">11:30 PM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="24">
+                            <td><span class="activityCell">12:00 AM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">12:00 AM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                        <tr data-enabled="1" id="24.5">
+                            <td><span class="activityCell">12:30 AM<input class="activityInput activityPlan" type="text"></span></td>
+                            <td><span class="activityCell">12:30 AM<input class="activityInput activityDone" type="text"></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="activity-summary">
+                    <p>Total activities begun: <input id="total-activities-begun" type="text"></p>
+                    <p>Total activities completed: <input id="total-activities-completed" type="text"></p>
+                    <p>Total interruptions: <input id="total-interruptions" type="text"></p>
+                    <p>Comments about the day:<textarea id="comments-about-this-day" name="name" rows="8" cols="40"></textarea></p>
+                </div>
+            </div>
+            <div class="save-button-wrapper"><button type="button" class="save-button" id="save-journal-button">Save</button></div>
+        </div>
+        <script src="renderer-process/todays-journal/manage-journals.js" charset="utf-8"></script>
+    </section>
+</template>

@@ -1,0 +1,39 @@
+.table-head {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+#day {
+    width: 2rem;
+    padding: 0 0.5rem;
+}
+.th {
+    padding: 0.5rem;
+    text-align: left;
+}
+#activity-table input[type=text] {
+    padding: 0 0.5rem;
+    margin-left: 1rem;
+}
+#activity-table td {
+    padding: 0.5rem;
+    width: 50%;
+}
+.activityCell{
+    display: flex;
+    line-height: 2;
+}
+.activityInput{
+    flex: 1;
+}
+.activity-summary p{
+    line-height: 1.5;
+    width: 60%;
+    text-align: right;
+}
+.activity-summary input {
+    line-height: 1.5;
+    width: 4rem;
+    padding: 0 0.5rem;
+    text-align: center;
+}

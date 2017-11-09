@@ -1,0 +1,239 @@
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Ubuntu-R.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'UbuntuLight';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Ubuntu-L.ttf) format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    font-family: Ubuntu, sans-serif;
+    line-height: 1.5;
+    background-color: #fff;
+    overflow: hidden;
+    color: var(--color);
+}
+@media (min-width: 1200px){
+    html {
+        font-size: 14px;
+    }
+}
+@media (max-width:1199px){
+    html {
+        font-size: 12px;
+    }
+}
+body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+}
+
+a {
+    color: var(--color-link);
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 1.12rem;
+  font-weight: 600;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  border: 1px solid hsla(0,0%,0%,.08);
+  border-width: 0 1px 1px 0;
+}
+th {
+  background-color: hsla(0,0%,50%,.06);
+}
+th,
+td {
+  text-align: center;
+  border: 1px solid hsla(0,0%,0%,.08);
+  border-width: 1px 0 0 1px;
+}
+
+svg {
+  fill: currentColor;
+}
+
+/* Code */
+
+code, kbd {
+  font-family: monospace;
+  border-radius: 0.285714rem;
+  padding: 1px 0.285714rem;
+  white-space: nowrap;
+  color: hsl(0,0%,36%);
+  background-color: hsla(0,0%,60%,.15);
+}
+
+pre, kbd {
+  font-size: 1rem;
+  overflow: auto;
+  padding: 1rem;
+  margin: 0;
+  border-radius: 0.285714rem;
+  border: 1px solid;
+  border-color: var(--color-border);
+  background-color: white;
+}
+
+pre code {
+  white-space: pre;
+}
+
+pre > .hljs {
+  color: var(--color-subtle);
+  background-color: white;
+}
+
+kbd {
+  padding: 0.5rem;
+}
+
+ul li {
+    list-style: circle;
+}
+small {
+    font-size: 0.833335rem;
+}
+/* Utilities ---------------------------- */
+
+.u-avoid-clicks {
+  pointer-events: none;
+}
+
+/* Visually hidden, but will be read by screen readers */
+.u-visible-to-screen-reader {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+
+/* Content ------------------ */
+
+.content {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+}
+.content.is-shown {
+  visibility: visible;;
+  opacity: 1;
+}
+
+
+.heart-sign {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+/* external link icon */
+.ex-link::after {
+    content: "\1f517";
+    display: inline-block;
+    margin-left: 4px;
+    font-size: 1rem;
+    vertical-align: middle;
+}
+
+/* selection */
+
+::selection {
+    color: white;
+    background: lightgray;
+}
+
+/* hide body*/
+.show-body {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s .12s linear , opacity .12s ease-in;
+}
+input, select {
+    outline: 0;
+    border: 1px solid var(--color-accent);
+    border-radius: 3px;
+    font-size: inherit;
+    padding: 0 0.5rem;
+    background-color: inherit;
+    color: inherit;
+    padding: 0;
+    margin: 0;
+}
+input:focus, textarea:focus {
+    outline: 0;
+    border: 1px solid red;
+}
+.table-row {
+    display: table-row;
+}
+.none {
+    display: none;
+}
+.save-button-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 1rem 0;
+}
+.save-button {
+    background-color: var(--color-accent);
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Ubuntu;
+    line-height: 1;
+    padding: 0.5rem 2rem;
+    box-shadow: 0 5px #0f323d, 0 5px 10px rgba(0, 0, 0, .35);
+}
+.save-button:active {
+    transform: translateY(2px);
+    box-shadow: 0 3px #0f323d, 0 3px 10px rgba(0, 0, 0, .35);
+}
