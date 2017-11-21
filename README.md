@@ -15,7 +15,7 @@ It will help you to determine:
 
 Time Keeper is a desktop application made using HTML, CSS, JavaScript, Nodejs. It runs in Electron. Electron must be installed before you use this application.
 
-UI fonts used is Ubuntu and Ubuntu Light.
+UI fonts used are Ubuntu and Ubuntu Light.
 
 Time Keeper is (currently) build only for Linux distributions. If you wish to port this application to other platform please refer to [Electron documentation](https://electron.atom.io/docs/), which can be done by minor additions.  
 
